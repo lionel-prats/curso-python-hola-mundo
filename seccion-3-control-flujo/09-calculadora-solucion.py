@@ -27,3 +27,5 @@ while True:
         print("Operación no válida")
         break
     print(f"El resultado es {resultado}.")
+
+# seguir por el v34 - introduccion a funciones

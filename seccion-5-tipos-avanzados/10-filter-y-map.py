@@ -9,14 +9,14 @@ usuarios = [
 print(usuarios)
 
 # transformacion
-nombres = [usuario[0] for usuario in usuarios]
+nombres = list(map(lambda usuario: usuario[0], usuarios))
 print(nombres)
 
 # filtrado
-usuarios_filtrados = [usuario for usuario in usuarios if usuario[1] > 2]
+usuarios_filtrados = list(filter(lambda usuario: usuario[1] > 2, usuarios))
 print(usuarios_filtrados)
 
 # filtrado y transformacion
-usuarios_filtrados_transformados = [usuario[0]
-                                    for usuario in usuarios if usuario[1] > 2]
+usuarios_filtrados_transformados = list(
+    map(lambda usuario: usuario[0], usuarios_filtrados))
 print(usuarios_filtrados_transformados)

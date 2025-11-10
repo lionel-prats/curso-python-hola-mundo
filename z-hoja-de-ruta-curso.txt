@@ -3,9 +3,11 @@ seccion 02 - Tipos básicos                     -  0h 56'
 seccion 03 - Control de flujo                  -  1h 00'
 seccion 04 - Funciones                         -  0h 59'
 seccion 05 - Tipos avanzados                   -  1h 48'
-seccion 06 - Clases                            -  1h 37' ***
+seccion 06 - Clases                            -  1h 37'
 seccion 07 - Excepciones                       -  0h 21'
+
 seccion 08 - Módulos                           -  0h 30'
+
 seccion 09 - Rutas y directorios               -  0h 24'
 seccion 10 - Gestión de archivos               -  0h 44'
 seccion 11 - Bases de datos SQLite             -  0h 18'

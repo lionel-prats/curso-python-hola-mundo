@@ -4,6 +4,9 @@ módulo estándar de Python, que viene instalado por defecto con el intérprete.
 Python ya sabe dónde encontrarlo: está en las rutas del sistema, dentro de las carpetas de la librería estándar
 (por ejemplo, /usr/lib/python3.10/os.py).
 
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
 ------------------------------------------------------- 
 
 - carpeta __pycache__: 
@@ -34,3 +37,6 @@ Podés borrar la carpeta __pycache__ sin problema; Python la recreará automáti
 
 - los modulos apuntan a archivos
 - los paquetes apuntan a carpetas
+
+------------------------------------------------------- 
+

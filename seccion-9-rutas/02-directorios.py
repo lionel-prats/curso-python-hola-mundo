@@ -14,10 +14,15 @@ path = Path("seccion-9-rutas")
 for p in path.iterdir():
     print(p)
 
+# utilizo la comprension de listas
 solo_archivos = [p for p in path.iterdir() if not p.is_dir()]
 print(solo_archivos)
 
-solo_archivos_clase2 = [p for p in path.glob("020*.py")]
+# utilizo la comprension de listas
+solo_archivos_clase2 = [p for p in path.glob("02*.py")]
 print(solo_archivos_clase2)
 
-# v 96 no terminado, reveerlo desde cero.
+# path.glob("**/*.py" === path.rglob("*.py"
+solo_archivos_py_recursivamente = [p for p in path.glob("**/*.py")]
+solo_archivos_py_recursivamente = [p for p in path.rglob("*.py")]
+print(solo_archivos_py_recursivamente)

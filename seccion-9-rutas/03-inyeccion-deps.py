@@ -1,4 +1,5 @@
 # ref. v97/v98
+# para ejecutar correctamente este script abrir la carpeta 'seccion-9-rutas' en una instancia nueva de VSCode
 
 from pathlib import Path
 

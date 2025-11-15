@@ -1,4 +1,4 @@
-# ref. video 79
+# ref. v79
 
 from abc import ABC, abstractmethod
 import os
@@ -13,6 +13,9 @@ class Model(ABC):
 
 class Usuario(Model):
     def guardar(self):
+        """
+        la logica dentro de este metodo la llamamos 'implementacion del metodo'
+        """
         print(f"Guardando en BBDD")
 
 
@@ -21,6 +24,9 @@ class Usuario(Model):
 # las sesiones por lo general se guardan en disco duro, en un archivo
 class Sesion(Model):
     def guardar(self):
+        """
+        la logica dentro de este metodo la llamamos 'implementacion del metodo'
+        """
         print(f"Guardando en archivo")
 
 

@@ -1,16 +1,20 @@
 # ref. v78
 
 from abc import ABC, abstractmethod
-# ABC = Abstract Class -> es la clase de la cual tiene que heredar cualquier clase que querramos que sea abstracta
-# abstractmethod = nos sirve para declarar atributos y metodos abstractos
+# ABC = Abstract Base Classes (modulo py) -> es la clase de la cual tiene que heredar cualquier clase que querramos que sea abstracta
+# abstractmethod = nos sirve para declarar atributos y metodos abstractos dentro de una clase abstracta,
+# lo cual implica que cualquier clase que herede de una clase abstracta con propiedades y/o metodos abstractos,
+# debe necesariamente declarar estas/os propiedades y/o metodos
 
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
-# con esta implementacion, Model es una clase abstracta
-
 
 class Model(ABC):
+    """
+    al heredar de la clase ABC (modulo default de py), ahora Model es una clase abstracta
+    por ende, nos aseguramos que no se puedan generar instancias de la clase Model
+    """
 
     # con esta propiedad abstracta definida, obligamos a las clases que heredan de Model a definir esta propiedad
     @property

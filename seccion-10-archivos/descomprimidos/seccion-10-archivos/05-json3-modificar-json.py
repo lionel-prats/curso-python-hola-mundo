@@ -1,8 +1,8 @@
-# ref. v104
+# ref. v103
 
-
+# from pprint import pprint
+import json
 from pathlib import Path
-from zipfile import ZipFile
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 

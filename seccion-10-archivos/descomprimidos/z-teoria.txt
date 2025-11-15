@@ -1,0 +1,46 @@
+- modulo os: 
+
+módulo estándar de Python, que viene instalado por defecto con el intérprete.
+Python ya sabe dónde encontrarlo: está en las rutas del sistema, dentro de las carpetas de la librería estándar
+(por ejemplo, /usr/lib/python3.10/os.py).
+
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+------------------------------------------------------- 
+
+- carpeta __pycache__: 
+
+La carpeta __pycache__ la crea Python automáticamente.
+Y tiene un propósito muy importante: mejorar el rendimiento de nuestros programas
+Cada vez que Python ejecuta un módulo (.py), lo compila internamente a bytecode, un formato intermedio optimizado que la máquina virtual de Python puede ejecutar más rápido.
+Ese bytecode se guarda en archivos con extensión .pyc dentro de la carpeta __pycache__.
+¿Por qué se guarda?
+Cuando Python vuelve a ejecutar tu script, ya no necesita volver a leer y recompilar el código fuente .py.
+En cambio:
+Detecta que existe un .pyc actualizado.
+Lo carga directamente desde __pycache__.
+Y así arranca el programa más rápido.
+Es un caché de bytecode, por eso el nombre:
+__pycache__ = Python cache
+Cuándo se actualiza o regenera:
+Python compara la fecha de modificación del .py original con el .pyc:
+Si cambiaste el .py, recompila y reemplaza el .pyc.
+Si no cambiaste nada, usa el compilado existente.
+Podés borrar la carpeta __pycache__ sin problema; Python la recreará automáticamente la próxima vez que ejecutes el programa.
+
+------------------------------------------------------- 
+
+- Paquetes: 
+
+- Diferencia entre modulo y paquete:
+
+- los modulos apuntan a archivos
+- los paquetes apuntan a carpetas
+
+------------------------------------------------------- 
+
+v103
+JSON == Java Script Object Notation (notacion de objetos en JavaScript)
+
+------------------------------------------------------- 

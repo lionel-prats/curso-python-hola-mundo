@@ -1,3 +1,9 @@
+- Que es lambda en py? (ref. video xxx)
+
+...
+
+------------------------------------------------------- 
+
 - Que es un modulo en py? (ref. video 16)
 
 Un modulo en py, viene siendo como un archivo py que viene por default con la instalacion
@@ -10,17 +16,15 @@ import math
 *** el modulo math es un archivo math.py, que ya incluye codigo, y que esta en alguna parte de la instalacion de Python.
 *** al importarlo, podemos hacer uso del codigo que este archivo incluye. 
 
-------------------------------------------------------- 
-
-- Que es lambda en py? (ref. video xxx)
-
-...
+*** podemos crear modulos customizados por nosotros mismos (ver 'Sección 8: Módulos')
 
 ------------------------------------------------------- 
 
-- Que es un paquete en py? (ref. video xxx)
+- Que es un paquete en py? (ref. video 89)
 
-...
+- En py, la diferencia entre modulo y paquete es que:
+* los modulos apuntan (hacen referencia) a archivos
+* los paquetes apuntan (hacen referencia) a carpetas
 
 ------------------------------------------------------- 
 
@@ -54,15 +58,6 @@ Python compara la fecha de modificación del .py original con el .pyc:
 Si cambiaste el .py, recompila y reemplaza el .pyc.
 Si no cambiaste nada, usa el compilado existente.
 Podés borrar la carpeta __pycache__ sin problema; Python la recreará automáticamente la próxima vez que ejecutes el programa.
-
-------------------------------------------------------- 
-
-- Paquetes: 
-
-- Diferencia entre modulo y paquete:
-
-- los modulos apuntan a archivos
-- los paquetes apuntan a carpetas
 
 ------------------------------------------------------- 
 

@@ -1,8 +1,6 @@
 # ref. v100
 
-from pprint import pprint
 from pathlib import Path
-from time import ctime
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 

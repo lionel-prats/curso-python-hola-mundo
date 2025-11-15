@@ -9,6 +9,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 texto = "Hola mundo2!"
 
 # me posiciono en el archivo, y si este no existe, lo crea
+# parametro "w" == write (SI EL ARCHIVO EXISTE, PISA EL CONTENIDO PREVIO)
 archivo = open("seccion-10-archivos/hola-mundo.txt", "w")
 
 # reescribo el contenido

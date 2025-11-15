@@ -40,3 +40,7 @@ Podés borrar la carpeta __pycache__ sin problema; Python la recreará automáti
 
 ------------------------------------------------------- 
 
+v103
+JSON == Java Script Object Notation (notacion de objetos en JavaScript)
+
+------------------------------------------------------- 

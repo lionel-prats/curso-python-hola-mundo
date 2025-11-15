@@ -1,24 +1,22 @@
-import csv
-import os
+import json
+from pathlib import Path
 
-# 'as r' -> este lo vamos a utilizar como lectura
-# 'as w' -> este lo vamos a u utilizar como un archivo temporal donde nosotros vamos a modificar lo que necesitemos
-with open("seccion-10-archivos/usuarios_gestion.csv", "r") as r, open("seccion-10-archivos/usuarios_gestion_temp.csv", "w", newline="") as w:
-    reader = csv.reader(r)  # instancia csv class
-    writer = csv.writer(w)  # instancia csv class
+data = Path("seccion-10-archivos/municipios.json").read_text(encoding="utf-8")
 
-    for linea in reader:
-        userId = linea[0]
-        if userId == "317":
-            writer.writerow(["317", "vjaime@cecaitra.org.ar", "99"])
-        else:
-            writer.writerow(linea)
+municipios = json.loads(data)
 
-# elimino el archivo original
-os.remove("seccion-10-archivos/usuarios_gestion.csv")
+for municipio in municipios:
+    if municipio["id"] == "12":
+        municipio["descrip"] = "Tígre RN"
 
-# renombro al archivo temp con el contenido actualizado, con el nombre del archivo original
-os.rename(
-    "seccion-10-archivos/usuarios_gestion_temp.csv",
-    "seccion-10-archivos/usuarios_gestion.csv"
-)
+Path("seccion-10-archivos/municipios.json").write_text(json.dumps(municipios,
+                                                                  indent=4, ensure_ascii=False),
+                                                       encoding="utf-8"
+                                                       )
+
+
+"""
+El módulo json en Python se utiliza para convertir estructuras de datos de Python a JSON y viceversa, permitiendo intercambiar 
+información entre aplicaciones, APIs, archivos y servicios externos.    
+En resumen: te permite obtener un JSON prolijo, legible y válido a partir de tus datos de Python.
+"""

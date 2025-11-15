@@ -1,3 +1,5 @@
+# ref. v87 (video incial de la seccion)
+
 import os  # modulo estandar de py, instalado por default con el interprete
 
 # importacion de modulo

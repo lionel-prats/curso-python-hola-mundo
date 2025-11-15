@@ -1,4 +1,4 @@
-# ref. video 85
+# ref. v85
 
 # errors and exceptions, doc -> https://docs.python.org/3/library/exceptions.html
 

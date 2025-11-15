@@ -1,4 +1,4 @@
-# ref. video 82
+# ref. v82
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 

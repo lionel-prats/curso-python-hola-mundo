@@ -1,8 +1,8 @@
-from pathlib import Path
-from time import ctime
+from io import open
 
-archivo = Path("z-modulos-que-fui-usando-segun-video/os.md")
+archivo = open("seccion-10-archivos/hola-mundo.txt", "r")
 
-print("acceso", ctime(archivo.stat().st_atime))
-print("creacion", ctime(archivo.stat().st_ctime))
-print("modificacion", ctime(archivo.stat().st_mtime))
+for linea in archivo:
+    print(linea)
+
+archivo.close()

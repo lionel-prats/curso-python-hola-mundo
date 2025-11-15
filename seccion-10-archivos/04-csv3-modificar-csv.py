@@ -6,8 +6,7 @@ import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
 # 'as r' -> este lo vamos a utilizar como lectura
-# 'as w' -> este lo vamos a u utilizar como un archivo temporal donde nosotros vamos a ir a escribir
-# a ir a escribir
+# 'as w' -> este lo vamos a u utilizar como un archivo temporal donde nosotros vamos a modificar lo que necesitemos
 with open("seccion-10-archivos/usuarios_gestion.csv", "r") as r, open("seccion-10-archivos/usuarios_gestion_temp.csv", "w", newline="") as w:
     reader = csv.reader(r)  # instancia csv class
     writer = csv.writer(w)  # instancia csv class

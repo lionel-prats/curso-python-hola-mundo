@@ -7,7 +7,6 @@ seccion 06 - Clases                            -  1h 37'
 seccion 07 - Excepciones                       -  0h 21'
 seccion 08 - Módulos                           -  0h 30'
 seccion 09 - Rutas y directorios               -  0h 24'
-
 seccion 10 - Gestión de archivos               -  0h 44'
 *** 541, 9 horas, 01 minutos
 

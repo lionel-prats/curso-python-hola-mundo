@@ -1,3 +1,29 @@
+- Que es un modulo en py? (ref. video 16)
+
+Un modulo en py, viene siendo como un archivo py que viene por default con la instalacion
+de py, que ya incluye codigo escrito en py,
+y que podemos importar desde cualquier archivo py nuestro.
+
+Ej vvv 
+
+import math
+*** el modulo math es un archivo math.py, que ya incluye codigo, y que esta en alguna parte de la instalacion de Python.
+*** al importarlo, podemos hacer uso del codigo que este archivo incluye. 
+
+------------------------------------------------------- 
+
+- Que es lambda en py? (ref. video xxx)
+
+...
+
+------------------------------------------------------- 
+
+- Que es un paquete en py? (ref. video xxx)
+
+...
+
+------------------------------------------------------- 
+
 - modulo os: 
 
 módulo estándar de Python, que viene instalado por defecto con el intérprete.

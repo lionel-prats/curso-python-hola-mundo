@@ -1,6 +1,7 @@
+# ref. v72
+
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
-# ref. video 72
 
 
 class Coordenadas:

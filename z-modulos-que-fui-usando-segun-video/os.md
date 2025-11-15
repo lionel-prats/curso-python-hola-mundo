@@ -1,4 +1,4 @@
-## `os`
+## `os` (video 102)
 ### Para qué sirve
 El módulo os proporciona una interfaz para interactuar con el sistema operativo desde Python.  
 Permite ejecutar tareas esenciales relacionadas con el entorno del sistema, como:

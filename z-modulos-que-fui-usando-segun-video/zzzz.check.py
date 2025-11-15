@@ -1,22 +1,35 @@
-# *** CHAT! dame la descripcion mas profesional, abarcativa y entendible posible en formato md, lista apra agregar a mi archivo md, para documentar que hace este modulo py
+from collections import deque
 
-from pathlib import Path
+# deque() es una clase
+# recibe como primer elemento un iterable
+fila = deque([1, 2])
 
-path_archivo = Path("os.md")
+fila.append(3)
+fila.append(4)
+fila.append(5)
+print(fila)
 
-print(path_archivo.exists())
-print(path_archivo.name)
+fila.popleft()
+print(fila)
+
+fila.popleft()
+fila.popleft()
+fila.popleft()
+if not fila:
+    print("fila vacia")
+else:
+    print("fila aun no esta vacia")
+
+fila.popleft()
+
+if not fila:
+    print("fila vacia")
+else:
+    print("fila aun no esta vacia")
+
 """
-True
-os.md
-"""
-
-print("\n")
-
-path_carpeta = Path("carpeta-fake")
-print(path_carpeta.exists())
-print(path_carpeta.name)
-"""
-True
-carpeta-fake
+deque([1, 2, 3, 4, 5])
+deque([2, 3, 4, 5])
+fila aun no esta vacia
+fila vacia
 """

@@ -1,6 +1,7 @@
+# ref. v64
+
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
-# ref. video 64
 
 
 class Perro:

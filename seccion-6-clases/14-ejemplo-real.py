@@ -1,6 +1,7 @@
+# ref. v77
+
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
-# ref. video 77
 
 
 class Model():

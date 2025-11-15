@@ -1,6 +1,7 @@
+# ref. v70
+
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
-# ref. video 70
 
 # metodos magicos disponibles en Python vvv
 # https://rszalski.github.io/magicmethods/

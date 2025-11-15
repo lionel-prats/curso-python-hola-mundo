@@ -1,4 +1,4 @@
-# ref. video 78
+# ref. v78
 
 from abc import ABC, abstractmethod
 # ABC = Abstract Class -> es la clase de la cual tiene que heredar cualquier clase que querramos que sea abstracta

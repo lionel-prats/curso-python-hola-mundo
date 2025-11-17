@@ -1,0 +1,35 @@
+# ref. v118
+
+import sys
+from pathlib import Path
+import os
+
+
+def cli(args):
+    if len(args) == 1:
+        print("no se pasaro argumentos")
+        return
+    if len(args) != 3:
+        print("se necesitan 2 argumentos")
+        return
+
+    origen = args[1]
+    o = Path(origen)
+
+    if not o.exists():
+        print("Origen no existe")
+        return
+
+    destino = args[2]
+    d = Path(destino)
+
+    if d.exists():
+        print("el destino no puede existir")
+        return
+
+    os.rename(str(origen), str(destino))
+    print("archivo renombrado con exito")
+
+
+os.system('cls' if os.name == 'nt' else 'clear')
+cli(sys.argv)

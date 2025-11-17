@@ -1,5 +1,7 @@
 # ref. v118
 
+# seccion-12-modulos-nativos/seccion-12-modulos-nativos\05-cli.py seccion-12-modulos-nativos/lala seccion-12-modulos-nativos/moco.md
+
 import sys
 from pathlib import Path
 import os

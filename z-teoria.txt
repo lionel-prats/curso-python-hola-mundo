@@ -83,3 +83,14 @@ Python ofrece la posibilidad de instalar un gestor de bases de datos de SQLite (
 
 Cómo hackear una pagina web? | SQL INJECTION (HolaMundo YT) vvv
 https://www.youtube.com/watch?v=reI-Yh5PjTI
+
+------------------------------------------------------- 
+
+ref. v119
+
+SMTP = Simple Mail Transfer Protocolo 
+Este protocolo es utilizado por muchos servicios actualmente.
+Tambien era y sigue siendo utilizado por Gmail.
+
+SendGrid -> Proveedor de correo electrinico 
+- incluye una capa gratuita

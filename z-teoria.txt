@@ -94,3 +94,55 @@ Tambien era y sigue siendo utilizado por Gmail.
 
 SendGrid -> Proveedor de correo electrinico 
 - incluye una capa gratuita
+
+------------------------------------------------------- 
+
+ref. v122
+
+Pypi: Python Package Index (Índice de paquetes de Python)
+
+- El índice de paquetes de Python (PyPI) es un repositorio de software para el lenguaje de programación Python.
+
+- url -> https://pypi.org/
+
+------------------------------------------------------- 
+
+ref. v123
+
+Instalar dependencias:
+
+- En Windows vvv
+pip install nombre-dependencia
+
+- En Linux/MAC vvv
+pip3 install nombre-dependencia
+
+- ejemplo de como instalar el paquete requests
+pip install requests
+
+- ejemplo de como desinstalar el paquete requests
+pip uninstall requests
+
+------------------------------------------------------- 
+
+ref. v124
+
+Ambientes virtuales:
+
+- comando para crear un ambiente virtual dentro de cualquier carpeta vvv 
+
+- En Windows vvv
+python -m venv env
+*** este comando lo que hace es crear una ambiente virtual dentro de la carpeta donde ejecutemos el comando
+
+- En Linux/MAC vvv
+python3 -m venv env
+*** este comando lo que hace es crear una ambiente virtual dentro de la carpeta donde ejecutemos el comando
+
+- comando para activar el entorno virtual (3'54") vvv
+
+- En Windows vvv
+env\Scripts\activate.bat
+
+- En Linux/MAC vvv
+source env/bin/activate

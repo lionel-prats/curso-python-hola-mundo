@@ -1,10 +1,10 @@
-- Que es lambda en py? (ref. video xxx)
+- Que es lambda en py? (ref. vxxx)
 
 ...
 
 ------------------------------------------------------- 
 
-- Que es un modulo en py? (ref. video 16)
+- Que es un modulo en py? (ref. v16)
 
 Un modulo en py, viene siendo como un archivo py que viene por default con la instalacion
 de py, que ya incluye codigo escrito en py,
@@ -20,7 +20,7 @@ import math
 
 ------------------------------------------------------- 
 
-- Que es un paquete en py? (ref. video 89)
+- Que es un paquete en py? (ref. v89)
 
 - En py, la diferencia entre modulo y paquete es que:
 * los modulos apuntan (hacen referencia) a archivos
@@ -61,7 +61,25 @@ Podés borrar la carpeta __pycache__ sin problema; Python la recreará automáti
 
 ------------------------------------------------------- 
 
-v103
+ref. v103
 JSON == Java Script Object Notation (notacion de objetos en JavaScript)
 
 ------------------------------------------------------- 
+
+ref. v105
+
+SQLite: se utiliza para poder gestionar bases de datos pequeñas (por ejemplo, la de las aplicaciones mobiles, o alguna aplicacion que no utilize tantos datos).
+Aplicaciones con volumen da datos de los cientos de miles, pueden ser gestionados satisfactoriamente por SQLite.
+
+Todos los gestores de DB que vamos a usar en Python van a ser bastante similares.
+Algunos vamos a tener que instalarlos.
+Otros ya vienen instalados dentro de Python.
+
+sqlite3 es un módulo que ya viene incluido dentro de Python, y que nos va a permitir a nosotros poder trabajar con las bases de datos SQLite.
+
+sqlite3 es el modulo de py que nos va a permitir a nosotros poder conectarnos a SQLite.
+
+Python ofrece la posibilidad de instalar un gestor de bases de datos de SQLite (INVESTIGAR) (ref. v107)
+
+Cómo hackear una pagina web? | SQL INJECTION (HolaMundo YT) vvv
+https://www.youtube.com/watch?v=reI-Yh5PjTI

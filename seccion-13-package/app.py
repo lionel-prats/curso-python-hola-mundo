@@ -8,6 +8,8 @@
 
 # desactivar el entorno virtual (Windows/Linux/MAC) -> deactivate
 
+# comando para matar todos los procesos de Python en Windows -> taskkill /F /IM python.exe
+
 import requests
 import json
 import os
@@ -20,4 +22,6 @@ data = r.json()   # convierte automáticamente a dict
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-print(json.dumps(data, indent=4))
+print(json.dumps(data["data"]["lugar"], indent=4))
+
+# seguir por el v.125

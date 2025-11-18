@@ -1,3 +1,12 @@
+- REPL (ref. v2)
+
+REPL de python == "Read Eval Print Loop"
+
+comando para entrar al REPL -> python (W) o python3 (L o MAC)
+salir del REPL              -> exit() o Ctrl+Z+ENTER
+
+------------------------------------------------------- 
+
 - Que es lambda en py? (ref. vxxx)
 
 ...
@@ -146,3 +155,31 @@ env\Scripts\activate.bat
 
 - En Linux/MAC vvv
 source env/bin/activate
+
+------------------------------------------------------- 
+
+ref. v125
+
+pipenv es una herramienta para manejar entornos virtuales y dependencias en Python, creada para simplificar y mejorar lo que se hacía manualmente con:
+- pip (instalar paquetes)
+- virtualenv (crear entornos virtuales)
+
+Podés pensar en pipenv como el equivalente a:
+- npm + package.json (Node)
+- composer + composer.json (PHP)
+
+-----
+
+- instalacion de pipenv de manera global, en mi instalación global de Python (lo hice desde Windows el Lunes 17/11/25) vvv
+
+1. comando de instalacion vvv
+
+- En Windows vvv
+pip install pipenv
+
+- En Linux/MAC vvv
+pip3 install pipenv
+
+2.
+
+pipenv --venv

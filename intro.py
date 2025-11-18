@@ -1,4 +1,4 @@
 """Introducción a Python"""
 
-print('hola')
-print('hola ' * 4)
+print("hola")
+print("hola " * 4)

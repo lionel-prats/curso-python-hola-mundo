@@ -1,0 +1,7 @@
+C:\Python312\Lib\site-packages
+
+* where python 
+
+* pip list
+
+* pip install pipenv

@@ -82,9 +82,17 @@
 # -------------------------------------------------------------------------------
 
 # ref. v128
+# en este video creamos la dependencia 'seccion13holamundoplayer'
+# en este video explica como se documenta en Python
 
+# -------------------------------------------------------------------------------
 
-
+# ref. v129
+# en este video explica como publicar el paquete 'seccion13holamundoplayer'
+# creado en el v128, en https://pypi.org/
+# URL del paquete -> https://pypi.org/project/holamundoplayer/0.0.1/#description
+# tambien hace una demo creando un nuevo proyecto, de como descargar el paquete y utilizarlo 
+# *** solo mire el video, llegado el caso repasarlo
 
 # -------------------------------------------------------------------------------
 

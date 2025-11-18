@@ -10,18 +10,18 @@ seccion 09 - Rutas y directorios               -  0h 24'
 seccion 10 - Gestión de archivos               -  0h 44'
 seccion 11 - Bases de datos SQLite             -  0h 18'
 seccion 12 - Paquetes nativos de Python        -  0h 50'
+seccion 13 - Indice de paquetes de Python      -  1h 07'
 
-*** 609, 10 horas, 9 minutos
+*** 676, 11 horas, 16 minutos
 
 --------------------------------------------------------
 
-seccion 13 - Indice de paquetes de Python      -  1h 07'
 seccion 14 - Paquetes populares                -  1h 36'
 seccion 15 - Django                            -  2h 42'
 seccion 16 - Machine Learning                  -  0h 54'
 seccion 17 - Integración y despliegue continuo -  1h 25'
 
-*** 464, 7 horas 44 minutos
+*** 397, 6 horas 37 minutos
 
 --------------------------------------------------------
 

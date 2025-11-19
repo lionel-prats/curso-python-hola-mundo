@@ -183,3 +183,10 @@ pip3 install pipenv
 2.
 
 pipenv --venv
+
+------------------------------------------------------- 
+
+ref. v130 
+
+
+VENV -> las variables de entorno son formas que tenemos de esconder las contraseñas para que no aparezcan en el codigo

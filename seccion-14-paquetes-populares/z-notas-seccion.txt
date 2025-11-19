@@ -1,0 +1,41 @@
+PROYECTO -> seccion-14-paquetes-populares
+
+----------------------------------------------------------------------
+
+v130 - variables de entorno 
+
+1. instalo sendgrid en el proyecto (servicio de gestion de emails)
+    pipenv install sendgrid
+
+2. activo el entorno virtual de pipenv
+    pipenv shell
+
+3. comando para desactivar el entorno virtual de pipenv 
+    exit
+
+----------------------------------------------------------------------
+
+v131 - sendgrid
+
+https://sendgrid.com/en-us
+
+
+1. primero explica com crear una cuenta en sendgrid y generar la apikey (no la cree)
+2. luego explica como configurar el envio de un mail de prueba en 01-env-py (copie el codigo, obviamente no funciona)
+
+----------------------------------------------------------------------
+
+v132 - sms
+
+1. primero explica com crear una cuenta en twilio y generar la apikey (no la cree)
+2. luego explica como configurar el envio de un sms de prueba en 02-twilio-py (copie el codigo, obviamente no funciona)
+
+----------------------------------------------------------------------
+
+v133 - requests
+
+1. demo de como hacer peticiones a la api publica https://jsonplaceholder.typicode.com
+
+----------------------------------------------------------------------
+
+v134 - headers en requests

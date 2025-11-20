@@ -39,3 +39,19 @@ v133 - requests
 ----------------------------------------------------------------------
 
 v134 - headers en requests
+
+1. demo de como hacer peticiones a la api publica https://jsonplaceholder.typicode.com cargauna una API KEY en los headers
+
+----------------------------------------------------------------------
+
+v135 - scrapping
+
+1. instalo la libreria para srappear
+    pipenv install beautifulsoup4
+
+----------------------------------------------------------------------
+
+v136 - excel
+
+1. instalo la libreria para trabajar con hojas de calculo
+    pipenv install openpyxl

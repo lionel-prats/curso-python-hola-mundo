@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 sendgrid = "*"
 requests = "*"
+beautifulsoup4 = "*"
+openpyxl = "*"
 
 [dev-packages]
 

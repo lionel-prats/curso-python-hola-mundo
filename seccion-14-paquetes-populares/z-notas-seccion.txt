@@ -55,3 +55,25 @@ v136 - excel
 
 1. instalo la libreria para trabajar con hojas de calculo
     pipenv install openpyxl
+
+----------------------------------------------------------------------
+
+v137 - pruebas automaticas
+
+- Selenium es una herramienta que nos va a permitir automatizar pruebas en el explorador web.
+
+- instalacion de Selenium
+
+1. https://pypi.org/
+2. busco 'selenium'
+3. https://pypi.org/project/selenium/
+*** lo deje en este punto porque no pude realizar la descarga que muestra el profesor
+
+----------------------------------------------------------------------
+
+v138 - Selenium 
+
+1. instalo selenium 
+pipenv install selenium
+
+2. como no pude descargar el driver de chrome solo vi el video y copie el codigo, pero no pude experimentar pruebas

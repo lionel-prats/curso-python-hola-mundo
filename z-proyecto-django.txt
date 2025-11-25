@@ -1,0 +1,69 @@
+- carpeta proyecto en PC Windows
+    /Desktop/cursos/python-holamundo/productly
+
+---------------------------------------------------------------------------
+
+v140 
+
+- primer proyecto con Django 
+    * proyecto iniciado el Lunes 24/11/25
+    * al momento de comenzar solo tenia instalada en mi pc w la version 3.14.0 de py 
+    * el profesor propone descargar la version 4.1.7 de django, la cual no es compatible con la v 3.14.0 de py 
+    * por ende me descargue la v 3.11.7 de py en mi PC Wibndows, y ahora tengo 2 versiones de py instaladas en la PC vvv
+        py --list
+        -V:3.14 *        Python 3.14 (64-bit)
+        -V:3.11          Python 3.11 (64-bit)
+
+1. cree la carpeta /Desktop/cursos/python-holamundo/productly/ en mi PC Windows (la carpeta del proyecto)
+
+2. parado dentro dentro de esta carpeta, creo un entorno virtual aislado para el proyecto, donde va a correr python 3.11.7 vvv
+
+    pipenv --python 3.11
+
+    *** este comando creo el entorno virtual en el siguiente path vvv 
+        C:\Users\User\.virtualenvs\productly-B355z_Nc
+    *** tambien, dentro de productivly/ se creo el archivo Pipfile con 
+    las configuraciones iniciales
+
+3. chequeo que en el entorno corre la version que espero de py vvv
+
+    User@DESKTOP-0VF0DF8 MINGW64 ~/Desktop/cursos/python-holamundo/productly
+    $ pipenv run python --version
+    Python 3.11.7
+
+4. parado dentro dentro de productly/, con el entorno virtual ya creado, instalo Django con pipenv (version 4.1.7) vvv
+
+    pipenv install django==4.1.7 
+
+5. chequeo la version instalada de django dentro en venv vvv
+
+    User@DESKTOP-0VF0DF8 MINGW64 ~/Desktop/cursos/python-holamundo/productly
+    $ pipenv run django-admin --version
+    4.1.7
+
+6. actrivo el entorno virtual vvv
+
+    pipenv shell
+
+7. descargo el scaffolding de django en la carpeta del proyecto (hasta aca solo se habian creado los archivos Pipfile y Pipfile.lock) vvv 
+
+    django-admin startproject productly .
+    *** este comando es una herramienta administrativa que viene incluida en django
+    *** este comando creo el archivo manage.py y la carpeta productly/, con el scaffolding inicial de django
+
+8. levanto el servidor de desarrollo vvv
+
+    python manage.py runserver
+
+    *** comando en Linux o em MAC vvv
+        python3 manage.py runserver
+
+    *** la aplicacion esta corriendo correctamente en -> http://127.0.0.1:8000/
+
+- Un proyecto puede contener multiples aplicaciones
+
+---------------------------------------------------------------------------
+
+v141
+
+...

@@ -1,6 +1,10 @@
 - carpeta proyecto en PC Windows
     /Desktop/cursos/python-holamundo/productly
 
+*** acceso desde la CMD de windows vvv 
+    cd Desktop\cursos\python-holamundo\productly
+
+
 ---------------------------------------------------------------------------
 
 v140 
@@ -41,7 +45,7 @@ v140
     $ pipenv run django-admin --version
     4.1.7
 
-6. actrivo el entorno virtual vvv
+6. activo el entorno virtual vvv
 
     pipenv shell
 
@@ -65,5 +69,69 @@ v140
 ---------------------------------------------------------------------------
 
 v141
+
+Proyectos Django -> 1 proyecto -> 1 a muchas aplicaciones
+
+1. dentro del proyecto creo el scaffolding de la app productos (para gestionar nuestros productos)
+
+    python manage.py startapp 
+    
+    *** recordar tener activo el entorno virtual (con pipenv shell)
+    *** este comando crea el scaffolding de la app productos, pero no instala la app dentro del proyecto
+
+---------------------------------------------------------------------------
+
+v142 
+
+1. terminamos de instalar la aplicacion productos (ya creamos el scaffolding en el v141)
+
+    1.1. configuro productly\settings.py
+    1.2. configuro productly\urls.py
+    1.3. creo y configuro productos\urls.py
+    1.4. configuro productos\views.py
+    
+2. levanto el server local -> python manage.py runserver 
+
+3. tiro la peticion y anda! -> http://127.0.0.1:8000/productos/
+
+---------------------------------------------------------------------------
+
+v144
+
+visualizador de sqlite3 -> DB Browser for SQLite vvv 
+    https://sqlitebrowser.org/dl/
+
+*** ya le tenia instalada en mi PC Windows
+
+---------------------------------------------------------------------------
+
+v146 
+
+1. creo un usuario adminstrador desde la terminal vvv 
+
+python manage.py createsuperuser
+admin
+123456
+
+2. configuro los modelos para que aparezcan en el panel de administracion del browser vvv 
+
+3. en productos\admin.py debo registrar los modelos a los que quiero acceder desde el panel de administracion (ver archivo)
+
+4. con estos pasos, ya nos podemos loguear con el usuario admin creado en 1. 
+y acceder al panel de administracion desde el browser vvv
+
+http://127.0.0.1:8000/admin/
+
+---------------------------------------------------------------------------
+
+v147
+
+- personalizar el panel de administracion
+
+1. en productos\admin.py, creamos las clases para gestionar nuestros modelos en la interfaz web de Django en el navegador
+
+2. tambien hay que setear el metodo magico __str__ de los modelos en models.py
+
+---------------------------------------------------------------------------
 
 ...

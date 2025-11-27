@@ -1,3 +1,6 @@
+- carpeta curso compoleto en PC Windows
+    /Desktop/cursos/curso-python-holamundo
+
 - carpeta proyecto en PC Windows
     /Desktop/cursos/python-holamundo/productly
 
@@ -134,4 +137,19 @@ v147
 
 ---------------------------------------------------------------------------
 
-...
+v149 
+
+- configuracion para correjir los errores que tira VSCode vvv 
+
+1. instalo el pluggin pylint-django (con el entorno virtual activo) vvv
+    pipenv install pylint-django
+
+2. En la raiz del proyecto (/productly) creamos el archivo .pylintrc
+
+3. lo configuramos (ver archivo)
+
+- siguiendo estos pasos, desaparecio el subrayado de VSCode
+
+---------------------------------------------------------------------------
+
+v150

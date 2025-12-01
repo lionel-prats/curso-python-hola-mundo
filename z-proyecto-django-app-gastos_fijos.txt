@@ -1,0 +1,137 @@
+Django - Patrón de diseño MTV (Model/Template/View)
+
++-----------+-------------------------+-------------------------------------------------------------+
+| Django    | Equivalente MVC        | Qué hace                                                    |
++-----------+-------------------------+-------------------------------------------------------------+
+| Model     | Model                  | Lógica de datos, ORM, define tablas                         |
++-----------+-------------------------+-------------------------------------------------------------+
+| Template  | View                   | Lo que el usuario ve (HTML, presentación)                   |
++-----------+-------------------------+-------------------------------------------------------------+
+| View      | Controller             | Recibe la request, ejecuta lógica y devuelve la response    |
++-----------+-------------------------+-------------------------------------------------------------+
+
+------------------------------------------------------------
+
+FLUJO vvv
+
+request GET   -> http://127.0.0.1:8000/gastos_fijos/ 
+(routes)      -> gastos_fijos/urls.py  -> path('', views.index, name="gastos_fijos_index")
+(controlador) -> gastos_fijos/views.py -> def index(request):
+(modelo)      -> ...
+(vista)       -> ...
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. creo manualmente el project root (proyecto raiz, carpeta donde va a vivir todo el proyecto)
+
+2. parado en del project root, creo el entorno virtual con py 3.11
+    pipenv --python 3.11
+        *** creó C:\Users\User\.virtualenvs\productly-B355z_Nc
+        *** creó el archivo Pipfile en el project root
+
+3. check version de python del entorno
+    pipenv run python --version
+
+4. instalo django v4.1.7 en el project root 
+    pipenv install django==4.1.7 
+
+5. check instalacion django
+    pipenv run django-admin --version
+
+6. entro al entorno virtual 
+    pipenv shell
+
+7. creo el proyecto django dentro del project root
+    django-admin startproject productly .
+
+8. creo la app 'productos '
+    python manage.py startapp productos
+
+9. creo la app 'gastos_fijos' 
+    pipenv shell *** dentro del entorno virtual
+    python manage.py startapp gastos_fijos
+
+10. 
+EXTRA: levantar  el server local
+    python manage.py runserver
+EXTRA: bajar el entorno virtual
+    exit
+EXTRA: generar archivos de migracion en las distintas carpetas /migrations de cada app del proyecto 
+    python manage.py makemigrations
+EXTRA: correr migraciones                   
+    python manage.py migrate
+
+----------------------------------------------------------------------------------------------------
+
+/productly/              -> Project root     -> manual
+/productly/productly/    -> Project package  -> COMMAND django-admin startproject productly .
+/productly/productos/    -> Django app       -> COMMAND python manage.py startapp productos
+/productly/gastos_fijos/ -> Django app       -> COMMAND python manage.py startapp gastos_fijos
+/productly/db.sqlite3    -> Database project -> se creó junto a la creación de la primera app (productos)
+
+----------------------------------------------------------------------------------------------------
+
+- INICIO configuración app 'gastos_fijos':
+
+- v142
+
+1. termino de instalar la app 'gastos_fijos'
+    registro la app en /productly/settings.py (variable INSTALLED_APPS)
+
+2. configuro las URLs (padre e hijas)
+    1. en productly/urls.py:
+        1.1. importo includes del paquete django.urls
+        1.2. registro las rutas de la app en la variable urlpatterns
+    2. creo y configuro el archivo gastos_fijos/urls.py para empezar a registrar las rutas hijas de la app
+    3. por ahora, en gastos_fijos/urls.py, solo registro la ruta 'http://127.0.0.1:8000/productos/'
+    4. la misma, la mapeé con el metodo views.index(), entonces debo crear ese nuevo metodo en gastos_fijos/views.py 
+     
+3. en el archivo gastos_fijos/views.py (serie el controlador de la app), registro el metodo index() para que todo funcione
+
+----------------------------------------------------------------------------------------------------
+
+- v143 
+
+1. creo y configuro los modelos Categoria, Obligatoriedad, Item y Gasto  en gastos_fijos/models.py
+
+*** comando para restartear las migraciones de la app vvv 
+    python manage.py migrate gastos_fijos zero
+
+----------------------------------------------------------------------------------------------------
+
+- v144 
+
+1. creo el archivo de migracion de los modelos definidos en gastos_fijos/models.py
+
+2. para esto, django proporciona un comando que escanea todos los archivos nombre_app/models.py de cada app del proyecto y detecta si existen modelos nuevos, o modelos ya mapeados en db.sqlite3, modificados.
+Si detecta cambios (modelos nuevos o modificados), crea los archivos de migracion que correspondan en cada app.
+Comando vvv
+
+    python manage.py makemigrations    
+
+3. estos archivos se crean siempre en la carpeta nombre_app/migrations de cada app 
+
+4.1. el primer archivo de migracion que se crea en cada app lleva el nombre nombre_app/migrations/0001_initial.py, y contendra el script para mapear en db.sqlite3 lo que
+django haya encontrado en nombre_app/models.py para esa app 
+
+4.2. si este archivo ya existe, implica que ya hubo un primer escaneo de nombre_app/models.py
+entonces, se generan archivos con nombres mas especificos relacionados a los cambios detectados.
+
+5. mapeo los modelos en la DDBB (archivo db.sqlite3)
+    python manage.py migrate
+
+----------------------------------------------------------------------------------------------------
+
+- v146 
+
+1. en el archivo gastos_fijos/admin.py registro los modelos Categoria, Obligatoriedad, Item y Gasto, para poder gestionarlos desde el panel de administracion del browser (ver archivo)
+
+----------------------------------------------------------------------------------------------------
+
+- v147 
+
+1. definimos los metodos magicos __str__ de cada modelo para indicarle a django como se van a visualizar los registros de cada tabla en el panel de administracion en el browser
+
+2. en gastos_fijos/admin.py defino como se va a visualizar los registros de cada tabla en el panel de administracion en el browser.
+

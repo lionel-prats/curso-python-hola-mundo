@@ -75,9 +75,9 @@ v141
 
 Proyectos Django -> 1 proyecto -> 1 a muchas aplicaciones
 
-1. dentro del proyecto creo el scaffolding de la app productos (para gestionar nuestros productos)
+1. dentro del proyecto (/productly) creo el scaffolding de la app productos (para gestionar nuestros productos)
 
-    python manage.py startapp 
+    python manage.py startapp productos
     
     *** recordar tener activo el entorno virtual (con pipenv shell)
     *** este comando crea el scaffolding de la app productos, pero no instala la app dentro del proyecto
@@ -152,4 +152,10 @@ v149
 
 ---------------------------------------------------------------------------
 
-v150
+v152 
+
+1. explica como hacer reutilizables entre todas las apps de un proyecto, los templates en django
+
+---------------------------------------------------------------------------
+
+Seguir viendo desde el v154 inclusive

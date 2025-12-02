@@ -158,4 +158,12 @@ v152
 
 ---------------------------------------------------------------------------
 
-Seguir viendo desde el v154 inclusive
+v155 
+
+1. en productos/views.py->detalle(), explica como implementar la pagina 404 de django pra recursos no encontrados
+
+---------------------------------------------------------------------------
+
+v156
+
+1. explica como funcionan los enlaces en django.

@@ -167,3 +167,7 @@ v155
 v156
 
 1. explica como funcionan los enlaces en django.
+
+---------------------------------------------------------------------------
+
+seguir por el v157

@@ -170,4 +170,49 @@ v156
 
 ---------------------------------------------------------------------------
 
-seguir por el v157
+v157 
+
+- paquete py ModelForm 
+- esta dependencia genera forms HTML a partir de los modelos de nuestras apps
+
+1. en este video, en la app /productos, creé el archivo forms.py (convencion)
+2. lo empezé a configurar
+3. en productly/settings.py instalé django.forms (libreria de donde importamos ModelForm en forms.py)
+    *** en INSTALLED_APPS agregué la key "django.forms"
+
+---------------------------------------------------------------------------
+
+v158
+
+1. en productos/urls.py creo la ruta path('formulario', views.formulario, name="formulario"),
+2. en productos/views.py defino la funcion formulario() (CONTROLADOR)
+3. creo la vista productos/templates/producto_form.html
+4. la configuro para construir el form de agregar producto, a partir del modelo Producto
+
+*** en este punto se visualiza correctamente un form HTML con todos los campos seteables por el usuario para agregar un nuevo registro a la tabla productos
+
+---------------------------------------------------------------------------
+
+v159 
+
+- en este video explica como configurar el controlador productos/views.py -> formulario() para procesar el submit POST del form (tanto para validar errores como para hacer el INSERT en DB)
+
+---------------------------------------------------------------------------
+
+v160 
+
+- en este video explica como personalizar los estilos de los formularios en django 
+
+1. realizamos algunas configuraciones en productly/settings.py
+
+2. creé el archivo templates/form_snippet.html y empezamos a configurarlo
+
+---------------------------------------------------------------------------
+
+v161 
+
+- empieza a explicar como personalizar el css de los forms desde templates/form_snippet.html
+
+---------------------------------------------------------------------------
+
+ver desde v162 
